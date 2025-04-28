@@ -1,5 +1,8 @@
 function calcAverageCalories(days) {
   let totalHole = 0;
+  if (days.length === 0) {
+    return 0;
+  }
   for (const hole of days) {
     totalHole += hole.calories;
   }
