@@ -1,9 +1,9 @@
 function calcAverageCalories(days) {
   let totalHole = 0;
   for (const hole of days) {
-    totalHole += hole.calories / 7;
+    totalHole += hole.calories;
   }
-  return totalHole;
+  return totalHole / days.length;
 }
 console.log(
   calcAverageCalories([

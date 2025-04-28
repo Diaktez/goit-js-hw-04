@@ -3,7 +3,7 @@ function isEnoughCapacity(products, containerSize) {
   for (const hole of Object.values(products)) {
     greatHole += hole;
   }
-  return greatHole > containerSize;
+  return greatHole <= containerSize;
 }
 
 console.log(isEnoughCapacity({ apples: 2, grapes: 3, carrots: 1 }, 8)); // true
